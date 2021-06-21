@@ -1,111 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-  <meta name="referrer" content="never">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="author" content="kveln">
-  <title>代号拿萨勒 | 听雨者说</title>
-  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="https://blog.steveshi.com/media/css/bootstrap.min.css" rel="stylesheet"> -->
-  <!--  <link href="https://blog.steveshi.com/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
-  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link rel="alternate" type="application/rss+xml" title="代号拿萨勒 | 听雨者说 » Feed" href="https://blog.steveshi.com/atom.xml">
-  <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
-  <link href="https://blog.steveshi.com/styles/main.css" rel="stylesheet">
-  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js"></script>
-  <!-- <script src="https://blog.steveshi.com/media/scripts/jquery.min.js"></script> -->
-  <script>hljs.initHighlightingOnLoad();</script>
-  
+    <meta charset="utf-8" >
 
-    <meta property="og:description" content="代号拿萨勒"/>
-    <meta property="og:url" content="https://blog.steveshi.com/post/dai-hao-na-sa-le/"/>
-    <meta property="og:locale" content="zh-CN"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content="听雨者说"/>
+<title>代号拿萨勒 | 听雨者说</title>
+<meta name="description" content="一切安好">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://blog.steveshi.com/favicon.ico?v=1624255252859">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://blog.steveshi.com/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
   </head>
   <body>
-  	<!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="https://blog.steveshi.com">听雨者说</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          
-          <li class="nav-item">
-              
-              <a class="nav-link" href="/">首页</a>
-              
-          </li>
-          
-          <li class="nav-item">
-              
-              <a class="nav-link" href="/archives">归档</a>
-              
-          </li>
-          
-          <li class="nav-item">
-              
-              <a class="nav-link" href="/tags">标签</a>
-              
-          </li>
-          
-          <li class="nav-item">
-              
-              <a class="nav-link" href="/post/about">关于</a>
-              
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('https://blog.steveshi.com/media/images/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-          	<span class="tags">
-          	 
-            <a href="https://blog.steveshi.com/tag/2vF5Q2URp/" class="tag">设定</a>
-            
-        </span>
-            <h1>代号拿萨勒</h1>
-            <span class="meta">
-            	Posted on
-              2021-06-21，6 min read
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+    <div id="app" class="main">
 
-  <!-- Post Content -->
-  <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <h1 id="宗教">宗教：</h1>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://blog.steveshi.com">
+        <img src="https://blog.steveshi.com/images/avatar.png?v=1624255252859" class="site-logo">
+        <h1 class="site-title">听雨者说</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一切安好
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://blog.steveshi.com/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">代号拿萨勒</h2>
+            <div class="post-date">2021-06-21</div>
+            
+            <div class="post-content">
+              <h1 id="宗教">宗教：</h1>
 <p><strong>主神</strong>：大地之树安赫拉<br>
 <strong>初代教宗</strong>：瑞利奥恩<br>
 <em>教宗职权至高无上</em><br>
 <strong>主神议会</strong>：并无实权，在战时由教宗受命执掌军权。在纳维亚世界中，除教宗外，只有这十二人被允许使用魔法，个人实力极为恐怖。<br>
 <strong>独立宗教国</strong>：雅拉安特教典国<br>
-<strong>神卫队</strong>：神主国军队组织，完全服从教宗。教宗可授权主神议会指挥树卫，但主神议会在平时并无调动树卫军的权利。<br>
+<strong>神卫队</strong>：神主国军队组织，又被称为树卫队，完全服从教宗。教宗可授权主神议会指挥树卫，但主神议会在平时并无调动树卫军的权利。<br>
 <strong>神选制</strong>：前任教宗逝世后当日，大地之树会指示下一任教宗所在地，由主神议会派出人员迎回。新任教宗会被大地之树赐福，获得所需各种知识。并因是大地之树眷顾之人，拥有能使用魔法之能力，可以认为是纳维亚世界中最伟大的魔法师。<br>
 <strong>教义</strong>：作为纳维亚世界最强大的存在，大地之树安赫拉仁慈而伟大。她赋予纳维亚世界所有生灵以平等的权利，但安赫拉并无感情，她不需要信徒的崇拜，也不会回应信徒的祈祷。安赫拉所代表的，是绝对的公正。<br>
 <strong>典籍</strong>：主要典籍为《瑞利奥恩书》，由教史上最伟大的初代教宗瑞利奥恩所著，基础教义及大地之树约典皆出自此处。另外《艾迪尔文书》也被追认为正统典籍之一。其他如《大树福音书》《乌尔姆威亚》等涉及宗教传说的典籍也不被神主国承认。但仍可作为平民认识大地之树安赫拉的途径。<br>
@@ -136,100 +133,45 @@
 <strong>守树人</strong>：守树人外型和人类几乎一样，但体型巨大，力大无穷，每个人都具有能改变河流山川的能力，但数量极为稀少。传说人类是守树人劣化而产生的，但这一说法并没有被证实。在《瑞利奥恩书》中记载守树人生存于“黑灾变”发生之前。负责守护中央巨树，也是大地之树安赫拉的唯一造物。在“黑灾变”之后，整个守树人全族完全消失，所以也是只存在于传说中的种族。只是被记载于圣典《瑞利奥恩书》中而被认为是真是存在的。</p>
 <hr>
 
-          
-        <div class="comment">
-          
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://blog.steveshi.com/tag/2vF5Q2URp/" class="tag">
+                    设定
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
         </div>
       </div>
     </div>
-  </article>
- <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            
-            
-            <li class="list-inline-item">
-              <a href="https://github.com/steveshi" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            
-              
-            
-            <li class="list-inline-item">
-              <a href="https://twitter.com/SteveShi1" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-              <li class="list-inline-item">
-              <a href="https://blog.steveshi.com/atom.xml" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-              </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy;<span>听雨者说</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
-        </div>
-      </div>
-    </div>
-   </footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="https://blog.steveshi.com/media/scripts/bootstrap.bundle.min.js"></script> -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
-  <!-- <script src="https://blog.steveshi.com/media/scripts/clean-blog.min.js"></script> -->
-  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
-<a id="back_to_top" href="#" class="back_to_top">
-  <span>▲</span></a>
-<script>$(document).ready((function(_this) {
-    return function() {
-      var bt;
-      bt = $('#back_to_top');
-      if ($(document).width() > 480) {
-        $(window).scroll(function() {
-          var st;
-          st = $(window).scrollTop();
-          if (st > 30) {
-            return bt.css('display', 'block')
-          } else {
-            return bt.css('display', 'none')
-          }
-        });
-        return bt.click(function() {
-          $('body,html').animate({
-            scrollTop: 0
-          },
-          800);
-          return false
-        })
-      }
-    }
-  })(this));</script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
-
